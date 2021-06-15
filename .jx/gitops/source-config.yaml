@@ -10,6 +10,12 @@ spec:
     repositories:
     - name: spring-boot-for-jx
     scheduler: in-repo
+  - owner: GalaxyiPhone
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: go-lang-for-jx
+    scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
