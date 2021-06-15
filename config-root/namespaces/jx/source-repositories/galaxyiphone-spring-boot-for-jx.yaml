@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: GalaxyiPhone
+    provider: github
+    repository: spring-boot-for-jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: galaxyiphone-spring-boot-for-jx
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/GalaxyiPhone/spring-boot-for-jx.git
+  org: GalaxyiPhone
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spring-boot-for-jx
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/GalaxyiPhone/spring-boot-for-jx
